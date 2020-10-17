@@ -7,3 +7,7 @@ Serverless systems should avoid any forms of ephemeral (in memory) state and any
 ## Communication should be asynchronous and queue based
 
 To prevent single failures bringing down large parts of a serverless system the system should be designed with resiliency built in - specifically by designing for asynchronous communication and by having *in tray* work queues to hold the requests for each component.
+
+## Do the very least you can do
+
+In each serverless function the code should do the absolute minimum amount of work it can do, with additional functionality being added by composition and orchestration.
