@@ -10,4 +10,4 @@ To prevent single failures bringing down large parts of a serverless system the 
 
 ## Do the very least you can do
 
-In each serverless function the code should do the absolute minimum amount of work it can do, with additional functionality being added by composition and orchestration.
+In each serverless function the code should do the absolute minimum amount of work it can do, with additional functionality being added by composition and orchestration.  In addition whilst workflows may have multiple dependencies, individual serverless functions should not.
